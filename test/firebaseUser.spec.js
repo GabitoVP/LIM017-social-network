@@ -60,7 +60,7 @@ describe('emailVerification', () => {
   it('Debería retornar una función', () => {
     expect(emailVerification()).toEqual(sendEmailVerification());
   });
-  it('Debería llamar la función una vez el sedEmailVerification', () => {
+  it('Debería llamar la función al menos una vez con la sedEmailVerification', () => {
     emailVerification();
     expect(sendEmailVerification).toHaveBeenCalled();
     expect(sendEmailVerification.mock.calls[0][0]).toEqual(getAuth().currentUser);
@@ -72,9 +72,3 @@ describe('singOut', () => {
     expect(singOutFirebase()).toEqual(signOut());
   });
 });
-
-// describe('getCurrentUser', () => {
-//   it('Debería retornar un objeto', () => {
-//     expect(getCurrentUser()).toEqual();
-//   });
-// });

@@ -36,7 +36,7 @@ describe('deletePost', () => {
 });
 
 describe('getPostEdit', () => {
-  it('Debería llamar la función que permite editar', () => {
+  it('Debería llamar la función al menos una vez que permite editar', () => {
     getPostEdit('id');
     expect(getDoc).toHaveBeenCalled();
     expect(getDoc.mock.calls[0][0]).toEqual({ post: 'id' });
@@ -44,7 +44,7 @@ describe('getPostEdit', () => {
 });
 
 describe('updatePost', () => {
-  it('Deberia llamar la función actualizar los post', () => {
+  it('Deberia llamar la función al menos una vez actualizar los post', () => {
     updatePost('id', 'updatePost');
     expect(updateDoc).toHaveBeenCalled();
     expect(updateDoc.mock.calls[0][0]).toEqual({ post: 'id' });
@@ -53,7 +53,7 @@ describe('updatePost', () => {
 });
 
 describe('arrayU', () => {
-  it('Debería llamar la función que permite unir los usuarios', () => {
+  it('Debería llamar la función al menos una vez que permite unir los usuarios', () => {
     arrayU('data');
     expect(arrayUnion).toHaveBeenCalled();
     expect(arrayUnion.mock.calls[0][0]).toEqual('data');
@@ -61,7 +61,7 @@ describe('arrayU', () => {
 });
 
 describe('arrayR', () => {
-  it('Debería llamar la función que permite remover los usuarios', () => {
+  it('Debería llamar la función al menos una vez que permite remover los usuarios', () => {
     arrayR('data');
     expect(arrayRemove).toHaveBeenCalled();
     expect(arrayRemove.mock.calls[0][0]).toEqual('data');
