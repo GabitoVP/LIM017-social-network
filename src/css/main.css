@@ -7,13 +7,11 @@
 .container {
   height: 100vh;
   background: linear-gradient(180deg, #5f00ff 0%, #4cb7eb 100%);
-  /* z-index: 1; */
   display: grid;
   grid-template-columns: 10% 90%;
   grid-template-rows: 20% 80%;
   grid-template-areas: "logoPhone logoPhone" "tabs space";
 }
-
 .logoPhone {
   grid-area: logoPhone;
   position: relative;
@@ -22,30 +20,22 @@
   margin-top: 20px;
 }
 .grid-container {
-  /* grid-area: tabs; */
   display: grid;
-  /* grid-template-columns: 100%;
-  grid-template-rows: 100%; */
   grid-template-areas: "tab";
 }
 .logoLema-container {
-  /* grid-area: info; */
   display: none;
   width: 0%;
   height: 0%;
 }
-
 /* Contenedor de LogIn y SignUp */
 .containerSignUpLogIn {
   grid-area: space;
-  /* position: relative; */
-  /* margin: 0 auto; */
   width: 100%;
   height: 100%;
   padding: 5%;
   background: #ffffff;
   border-radius: 40px 0px 0px 0px;
-  /* z-index: 2; */
 }
 #login{
   font-size: 100%;
@@ -53,30 +43,22 @@
 .logIn-container {
   display: grid;
   gap: 2%;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* justify-content: center; */
   font-family: "Telex", sans-serif;
-  /* margin-top: 20%; */
   margin-left:5%;
   margin-top: 10%;
 }
-
 .logIn-container h1 {
   font-family: "Telex", sans-serif;
   font-size: 200%;
   line-height: 136.5%;
   color: #4bc3fe;
 }
-
 .signUp-container h1 {
   font-family: "Telex", sans-serif;
   font-size: 200%;
   line-height: 136.5%;
   color: #4bc3fe;
 }
-
 .input {
   background: none;
   color: black;
@@ -88,21 +70,14 @@
   border-bottom: 1px solid #C4C4C4;
   font-family: "Telex", sans-serif;
 }
-
 .labels{
   color: #C4C4C4;
   cursor: pointer;
-  /* margin: 2%; */
 }
-
 .labelOr{
   font-size: 16px;
-  margin-left: 35%;
+  margin-left: 40%;
 }
-
-/* .signUp {
-  display: none;
-} */
 .signUpContent{
   display: grid;
   gap: 2%;
@@ -131,7 +106,7 @@
   font-size: 0.9em;
 }
 
-.btnSig {
+.btnSign {
   border: none;
   cursor: pointer;
   outline: none;
@@ -142,39 +117,30 @@
   font-size: 0.8em;
   color:#4bc3fe;
 }
-
-.btnSig:hover{
+.btnSign:hover{
   color: #5f00ff;
 }
 .btnGoogle:hover{
   cursor:pointer;
 }
-
-.message{
+.messageHaveAnAccount{
   margin-top: 1%;
   font-size: 0.9em;
 }
 
 .messageSignUpError{
-  /* display: none; */
   margin-top: 5%;
   font-size: 0.8em;
   color: rgb(255,0,0);
 }
-
-.messageLogIn{
-  /* display: none; */
+.messageLogInError{
   margin-top: 5%;
   font-size: 0.8em;
   color: rgb(255, 0, 0);
 }
 
-/*@media only screen and (min-width: 600px){
-   For tablets: 
-}*/
-
 @media only screen and (min-width: 769px){
-  /* For desktop: */
+    /* For desktop: */
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -209,7 +175,6 @@
   .containerSignUpLogIn {
     border-radius: 40px 0px 0px 40px;
   }
-
   .logIn-container {
     margin-top: 10%;
   }

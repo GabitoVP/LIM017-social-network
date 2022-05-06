@@ -1,84 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 .home {
     height: 100vh;
-    margin: 0px;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 10% 90%;
-    grid-template-areas: "navWall" "wall";
-    background-color: #F1EFEF;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 8% 82%;
+    grid-template-areas: "nav" "head" "post";
 }
 
 .navWall{
-    grid-area: navWall;
-    background-color: #5f00ff;
+    grid-area: nav;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #5f00ff 0%, #4cb7eb 100%);
+    color: white;
 }
 
-.logoWall{
-    position: relative;
-    width: 0%;
+.nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logoWall {
+    width: 8em;
+}
+
+.navMenu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.navItem {
+    text-decoration: none;
+    font-family: "Telex", sans-serif;
+    color: white;
+}
+
+.navItem:hover {
+    color:#ffb624;
+}
+
+.headWall {
+    grid-area: head;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.headWall h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: "Telex", sans-serif;
+    margin-left: 3%;
 }
 
 .containerWall{
-    grid-area: wall;
-    display: flex;
-    justify-content: center;
+    height: 100vh;
+    grid-area: post;
 }
 
-.containerPost {
+.postHead{
+    width: 80%;
     display: grid;
     gap: 4%;
     background: white;
-    border-radius: 20px;
+    border-radius: 15px;
     font-family: "Telex", sans-serif;
     padding: 3%;
+    border: solid 1px rgb(201, 200, 200);
     box-shadow: 1px 1px 1px grey;
     position: relative;
-    width: 80%;
-    height: 40%;
-    top: 20px;
+    margin: 2% 5% 3% 5%;
 }
 
-.tillePost{
+/* Contenedor generales de cada post */
+.containerShowPost{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Post generados */
+.containerPost-Each{
+    display: grid;
     font-family: "Telex", sans-serif;
-    font-size: 150%;
-    color: #4bc3fe;
-}
-
-.postWrite{
-    text-decoration: none;
-}
-
-.btnShare {
-    background: #ffb624;
-    color: #ffffff;
-    width: 20%;
-    height: 140%;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+    border-radius: 15px;
+    width: 80%;
+    background: white;
+    padding: 3%;
+    border: solid 1px rgb(201, 200, 200);
     box-shadow: 1px 1px 1px grey;
+    position: relative;
+}
+
+.postWrite1{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    text-decoration: none;
+    border: solid 1px rgb(255, 250, 250);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.userPost {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.dataPost {
+    color: rgb(201, 200, 200);
+    font-size: 0.8em;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+figure {
+    text-align: center;
+}
+
+.postImg {
+    width: 100%;
+    height: auto;
+}
+
+.btnPosts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.likespost {
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(182, 182, 182);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1%;
+}
+
+.likes {
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    color: #ffb624;
+    cursor: pointer;
+}
+
+.btnPostED {
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    color: #5f00ff;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 769px){
-    .home {
-        height: 100vh;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 20% 80%;
-        grid-template-rows: auto;
-        grid-template-areas: "navWall wall";
-        background-color: #F1EFEF;
+    .navMenu {
+        gap: 6em;
     }
-    .navWall{
-        grid-area: navWall;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(180deg, #5f00ff 0%, #4cb7eb 100%);
-        border-radius: 0px 20px 20px 0px;
+
+    .postWrite1{
+        height: 50px;   
     }
-    .logoWall{
+
+    .userPost {
+        font-size: 1.2em;
+    }
+
+    .postImg {
         width: 80%;
     }
 }
