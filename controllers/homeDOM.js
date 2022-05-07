@@ -65,7 +65,7 @@ const getPosts = async () => {
       <p class="desciption Post"> ${postWrite.description} </p>
       </div>
       <figure>
-          <img class="postImg" src="./img/Befit.jpeg">
+          <img class="postImg" src="../img/Befit.jpeg">
       </figure>
       <div class="likespost">
       <button class="likes"> <i class="fa-solid fa-heart" data-id='${doc.id}'></i> ${postWrite.likesCount}</button> <p> </p>
