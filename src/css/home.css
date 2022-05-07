@@ -133,8 +133,8 @@
 figure {
     text-align: center;
 }
-
 .postImg {
+    background-image: url(../img/Befit.jpeg);
     width: 100%;
     height: auto;
 }
