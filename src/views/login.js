@@ -2,10 +2,10 @@ export const login = () => {
   const htmlLogin = `
     <div class="container">
     <div class="logoPhone"></div>
-    <img class="logoPhone" src="../img/logo.png">
+    <img class="logoPhone" src="img/logo.png">
         <div class="grid-container">
           <div class="logoLema-container">
-            <img class="logoWeb" src="../img/logo.png">
+            <img class="logoWeb" src="img/logo.png">
             <p class="lema"> A place where you find people like you. </p>
           </div>
         </div>
