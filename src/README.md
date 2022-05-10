@@ -22,14 +22,6 @@ Es una red social, el cual permite compartir información sobre como vivir una v
 - Generar una comunidad amigable
 - Tener información adecuada
 
-historias de usuario
-- Contar con una cuenta propia
-- Generar públicaciones
-- Borrar públicaciones
-- Editar publicacciones
-- Dar likes a post de su interes
-- Cerrar sesión de la red social
-
 ## BENEFICIARIOS DIRECTOS E INDIRECTOS
 ### DIRECTOS
 - Personas que buscan llevar una vida saludable
@@ -42,9 +34,17 @@ historias de usuario
 ### HISTORIAS DE USUARIO
 Una vez definidas las necesidades y/o problemas se crearon historias de usuarios para poder solucionarlas.
 
-   ### INVESTIGACIÓN
-<!-- Historias de Usuario -->
-[Project-3.jpg](https://postimg.cc/jwbxHxdn)
+  ### Primera historia:
+
+  [![Primera-historia.png](https://i.postimg.cc/xTQvvYX8/Primera-historia.png)](https://postimg.cc/py05vwYM)
+  ### Segunda historia:
+
+  [![Segunda-historia.png](https://i.postimg.cc/9XLmpYM9/Segunda-historia.png)](https://postimg.cc/3WDQrp2r)
+
+  ### Tercera historia:
+
+  [![Tercera-historia.png](https://i.postimg.cc/pVcv8VGY/Tercera-historia.png)](https://postimg.cc/6TZFxKNy)
+
 
 <!-- Pagina Web DeskTop -->
 <a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/1RCq2xbJ/1-1.png" alt="1-1"/></a><br/><br/>
@@ -124,7 +124,7 @@ En el proyecto se han marcado distintos objetivos de aprendizaje los cuales se d
 - [x] Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 - [x] Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
 - [x] GitHub: Creación de cuenta y repos, configuración de llaves SSH**
-- [ ] GitHub: Despliegue con GitHub Pages
+- [x] GitHub: Despliegue con GitHub Pages
 - [x] GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
 - [x] GitHub: Organización en Github (projects | issues | labels | milestones | releases)
 
@@ -133,7 +133,7 @@ En el proyecto se han marcado distintos objetivos de aprendizaje los cuales se d
 - [x] Diseñar la aplicación pensando en y entendiendo al usuario
 - [x] Crear prototipos para obtener feedback e iterar
 - [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)**
-- [ ] Planear y ejecutar tests de usabilidad
+- [x] Planear y ejecutar tests de usabilidad
 
 ### Firebase
 

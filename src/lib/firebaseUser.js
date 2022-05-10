@@ -34,12 +34,6 @@ export const loginFirebase = (email, password) => {
   return loginBefit;
 };
 
-// OBTENER EL USUARIO ACTUAL con sus propiedades
-// export const getCurrentUser = () => {
-//   const user = auth.currentUser;
-//   return user;
-// };
-
 // ACTUALIZA EL PERFIL DEL USUARIO
 export const updaterUserProfile = (name) => {
   return updateProfile(auth.currentUser, {
